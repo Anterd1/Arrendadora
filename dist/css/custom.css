@@ -4,6 +4,11 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ .bg-image{
+  background-image: url('/img/camion.png');
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -57,14 +62,6 @@
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
 }
-
-img-1 {
-  background-image: url(/img/camion.png);
-  background-size: cover;
-  background-position: center;
-}
-
-
 
 *,
 *::before,
@@ -174,11 +171,6 @@ button:not(:disabled),
 ::-webkit-file-upload-button {
   font: inherit;
   -webkit-appearance: button;
-}
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
 }
 
 
