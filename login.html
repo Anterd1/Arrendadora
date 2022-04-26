@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrendadora</title>
     <!-- CSS only -->
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/reducido.css">
 </head>
 <body>
   <main class="container-fluid vh-100" >
     <div class="row vh-100">
-      <div class="col-md-6">
-       <img src="img/camion.png" alt="" class="img-fluid">
+      <div class="col-md-6 d-none d-md-block ">
+        <img src="/img/camion.png" alt="" class="img-fluid">
       </div>
       <div class="col-md-6 d-flex align-items-center justify-content-center">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Correo</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">No compartas tu email con nadie mas.</div>
+        <div class="row-cols-3">
+          <div class="col-12">
+            <img src="/img/Logo-Icono.png" alt="">
           </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          
-          <button type="submit" class="btn btn-primary">Ingresar</button>
-        </form>
+          <div class="col-12">
+            <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No compartas tu email con nadie mas.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            </form>
+        </div>
+        </div>
       </div>
     </div>
   </main>
