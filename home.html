@@ -6,14 +6,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arrendadora</title>
     <!-- CSS only -->
-<link rel="stylesheet" href="dist/css/custom.css">
+<link rel="stylesheet" href="css/custom.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="bg-image vh-100">
-        asdasdfsdf
+  <main class="container-fluid">
+    <div class="row">
+      <div class="d-flex flex-column flex-shrink-0 p-3  vh-100" style="width: 280px;">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+          <i class="fa-solid fa-grid-horizontal"></i>
+          <span class="fs-4">Harinas Elizondo</span>
+        </a>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+              Estados de cuenta
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+              Catalogos
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+              Consultas
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link link-dark">
+              <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+              Operativo
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>Manuel Iriso</strong>
+          </a>
+          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+            <li><a class="dropdown-item" href="#">Proximamente</a></li>
+            <li><a class="dropdown-item" href="#">Configuraciones</a></li>
+            <li><a class="dropdown-item" href="#">Perfil</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col px-0 vh-100 bg-light">
+        <div class="row d-flex justify-content-center gap-3 mt-5">
+          <div class="col-9">
+            <h2>Propietarios</h2>
+          </div>
+          <div class="col-12">
+            <div class="d-grid">
+  <input class="form-control border-0 py-3 shadow" list="datalistOptions" id="exampleDataList" placeholder="Nombre , Unidad , Estado">
+  <datalist id="datalistOptions">
+    <option value="San Francisco">
+    <option value="New York">
+    <option value="Seattle">
+    <option value="Los Angeles">
+    <option value="Chicago">
+  </datalist>
+            </div>
+          </div>
+          <div class="col-9">
+            <div class="col-12 my-4">
+              <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header bg-primary text-white ">
+                      <h5 class="modal-title fs-2" id="exampleModalToggleLabel">Registro de propietarios</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="m-3 row">
+                          <h3>Datos generales</h3>
+                          <div class="mb-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label">Primer apellido</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label">Primer apellido</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label">Primer apellido</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1">
+                          </div>
+                        </div>
+                        <div class="row m-3">
+                          <h3>Dirección</h3>
+                          <div class="mb-3 col-6">
+                            <label for="inputGroupSelect01" class="form-label">Primer apellido</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label">C.P</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="exampleInputPassword1" class="form-label">C.P</label>
+                            <input type="email" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="inputGroupSelect01" class="form-label">Primer apellido</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="mb-3 col-6">
+                            <label for="inputGroupSelect01" class="form-label">Primer apellido</label>
+                            <select class="form-select" id="inputGroupSelect01">
+                              <option selected>Choose...</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div> 
+                          <div class="mb-3 col-6">
+                            <button class="btn btn-primary btn-lg m-3" type="submit" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrar</button>
+                          </div>                    
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-primary btn-lg" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Nuevo propietario </a>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <table class="table table-hover">
+                  <thead class="table">
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Nombre </th>
+                      <th scope="col">Apellido</th>
+                      <th scope="col">Unidad</th>
+                      <th scope="col">Estatus</th>
+                      <th scope="col">Accion</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><button type="button" class="btn btn-danger py-0">Activo</button></td>
+                      <td><i class="fa-solid fa-pen-to-square"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><button type="button" class="btn btn-danger py-0">Activo</button></td>
+                      <td> 
+                        <div class="dropdown">
+                        <a href="#" class="d-flex align-items-center link-dark text-decoration-none" id="edit" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-pen-to-square"></i>
+                        </a>
+                        <ul class="dropdown-menu text-small shadow" aria-labelledby="edit">
+                          <li><a class="dropdown-item" href="#">Registrar</a></li>
+                          <li><a class="dropdown-item" href="#">Historico abonos</a></li>
+                          <li><a class="dropdown-item" href="#">ver</a></li>
+                          <li><a class="dropdown-item" href="#">Eliminar</a></li>
+                        </ul>
+                       </div>
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><button type="button" class="btn btn-danger py-0">Activo</button></td>
+                      <td><i class="fa-solid fa-pen-to-square"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><button type="button" class="btn btn-danger py-0">Activo</button></td>
+                      <td><i class="fa-solid fa-pen-to-square"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><button type="button" class="btn btn-danger py-0">Activo</button></td>
+                      <td><i class="fa-solid fa-pen-to-square"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><button type="button" class="btn btn-danger py-0">Activo</button></td>
+                      <td><i class="fa-solid fa-pen-to-square"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><button type="button" class="btn btn-danger py-0">Activo</button></td>
+                      <td><i class="fa-solid fa-pen-to-square"></i></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                      <td><button type="button" class="btn btn-danger py-0">Activo</button></td>
+                      <td><i class="fa-solid fa-pen-to-square"></i></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col 12 my-3 d-flex justify-content-end">
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+</main>
+
 </body>
 
 <!-- insersion de codigo js -->
-<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
