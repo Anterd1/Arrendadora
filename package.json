@@ -4,7 +4,7 @@
   "description": "Arrendadora de transporte para Harinas Elizondo",
   "main": "index.js",
   "scripts": {
-    "build": "purgecss --css css/custom.css --content home.html -o dist/css/home.css"
+    "build": "purgecss --css css/custom.css --content *.html -o dist/css/home.css"
   },
   "repository": {
     "type": "git",
